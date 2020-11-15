@@ -12,6 +12,11 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap" rel="stylesheet">
 
+		<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com">  -->
+		<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Styles -->
@@ -33,16 +38,16 @@
                 </div> <!-- end top-nav -->
                 <div class="hero container">
                     <div class="hero-copy">
-                        <h1>YourCustomPc</h1>
-                        <p>YAHAN COMPUTER KA SAMAN MILEGA!</p>
+                        <h1 style="font-size:40px;cursor:pointer; color:white; font-family: 'Shadows Into Light', cursive;" >BUILD YOUR OWN "CUSTOM PC" RIGHT HERE!</h1>
+                        <!-- <p>YAHAN COMPUTER KA SAMAN MILEGA!</p> -->
                         <div class="hero-buttons">
-                            <a href="https://www.youtube.com/playlist?list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR" class="button button-white">BT-1</a>
-                            <a href="https://github.com/drehimself/laravel-ecommerce-example" class="button button-white">BT-2</a>
+                            <a href="" class="button button-white">BUILD HERE</a>
+                            <a href="{{ route('shop.index') }}" class="button button-white">OTHER PRODUCTS</a>
                         </div>
                     </div> <!-- end hero-copy -->
 
                     <div class="hero-image">
-                        <img src="img/macbook-pro-laravel.png" alt="hero image">
+                        <img src="img/imac.png" alt="hero image">
                     </div> <!-- end hero-image -->
                 </div> <!-- end hero -->
             </header>
@@ -50,9 +55,17 @@
             <div class="featured-section">
 
                 <div class="container">
-                    <h1 class="text-center">Laravel Ecommerce</h1>
+                    <h1 style="font-size:30px;cursor:pointer; color:BLACK; font-family: 'Rock Salt', cursive;" class="text-center">YourCustomPc</h1>
 
-                    <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vitae nisi, consequuntur illum dolores cumque pariatur quis provident deleniti nesciunt officia est reprehenderit sunt aliquid possimus temporibus enim eum hic lorem.</p>
+                    <p style="font-size:25px;cursor:pointer; color:black; font-family: 'Gochi Hand', cursive; text-align: center;"  class="section-description">WE SERVE TOP QUALITY-TRUSTED BRAND PRODUCTS. WE ARE KNOWN FOR OUR CUSTOM PC RELATED SERVICES.</p>
+
+                    <div class="brands">
+
+			             
+                    	
+                    </div>
+
+                    <p style="font-size:25px;cursor:pointer; color:black; font-family: 'Gochi Hand', cursive; text-align: center;"  class="section-description">YOUR DREAM PC AT YOUR DOOR STEP!</p>
 
                     <!-- <div class="text-center button-container">
                         <a href="#" class="button">Featured</a>
@@ -82,7 +95,7 @@
                     </div> <!-- end products -->
 
                     <div class="text-center button-container">
-                        <a href="{{ route('shop.index') }}" class="button">View more products</a>
+                        <a href="{{ route('shop.index') }}" class="button">Explore more products</a>
                     </div>
 
                 </div> <!-- end container -->
