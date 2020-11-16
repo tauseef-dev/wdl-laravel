@@ -1,7 +1,11 @@
+<head>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+
 <header>
     <div class="top-nav container">
       <div class="top-nav-left">
-          <div class="logo"><a href="/">Ecommerce</a></div>
+          <div style="font-size:24px;cursor:pointer; color:white; font-family: 'Rock Salt', cursive;" class="logo"><a href="/">YourCustomPc</a></div>
           @if (! (request()->is('checkout') || request()->is('guestCheckout')))
           {{ menu('main', 'partials.menus.main') }}
           @endif

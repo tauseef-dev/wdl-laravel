@@ -330,11 +330,11 @@ class MenuItemsTableSeederCustom extends Seeder
                 ])->save();
             }
 
-            $menuItem = MenuItem::firstOrNew([
-                'menu_id' => $menu->id,
-                'title'   => 'Blog',
-                'url'     => 'https://blog.laravelecommerceexample.ca',
-                'route'   => null,
+            // $menuItem = MenuItem::firstOrNew([
+            //     'menu_id' => $menu->id,
+            //     'title'   => 'Blog',
+            //     'url'     => 'https://blog.laravelecommerceexample.ca',
+            //     'route'   => null,
             ]);
             if (!$menuItem->exists) {
                 $menuItem->fill([
