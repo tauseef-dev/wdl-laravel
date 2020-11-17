@@ -2,6 +2,8 @@
 
 Route::get('/', 'LandingPageController@index')->name('landing-page');
 
+Route::get('/pay', 'RazorRedirect@razor');
+
 Route::get('/shop', 'ShopController@index')->name('shop.index');
 Route::get('/shop/{product}', 'ShopController@show')->name('shop.show');
 
@@ -46,3 +48,4 @@ Route::middleware('auth')->group(function () {
     Route::get('/my-orders', 'OrdersController@index')->name('orders.index');
     Route::get('/my-orders/{order}', 'OrdersController@show')->name('orders.show');
 });
+

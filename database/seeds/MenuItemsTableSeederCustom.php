@@ -167,12 +167,12 @@ class MenuItemsTableSeederCustom extends Seeder
             ])->save();
 
 
-            $menuItem = MenuItem::firstOrNew([
-                'menu_id' => $menu->id,
-                'title'   => 'Posts',
-                'url'     => '',
-                'route'   => 'voyager.posts.index',
-            ]);
+            // $menuItem = MenuItem::firstOrNew([
+            //     'menu_id' => $menu->id,
+            //     'title'   => 'Posts',
+            //     'url'     => '',
+            //     'route'   => 'voyager.posts.index',
+            // ]);
 
             $menuItem->fill([
                 'target'     => '_self',
@@ -182,12 +182,12 @@ class MenuItemsTableSeederCustom extends Seeder
                 'order'      => 10,
             ])->save();
 
-            $menuItem = MenuItem::firstOrNew([
-                'menu_id' => $menu->id,
-                'title'   => 'Pages',
-                'url'     => '',
-                'route'   => 'voyager.pages.index',
-            ]);
+            // $menuItem = MenuItem::firstOrNew([
+            //     'menu_id' => $menu->id,
+            //     'title'   => 'Pages',
+            //     'url'     => '',
+            //     'route'   => 'voyager.pages.index',
+            // ]);
 
             $menuItem->fill([
                 'target'     => '_self',
@@ -335,16 +335,17 @@ class MenuItemsTableSeederCustom extends Seeder
             //     'title'   => 'Blog',
             //     'url'     => 'https://blog.laravelecommerceexample.ca',
             //     'route'   => null,
-            ]);
-            if (!$menuItem->exists) {
-                $menuItem->fill([
-                    'target'     => '_self',
-                    'icon_class' => null,
-                    'color'      => null,
-                    'parent_id'  => null,
-                    'order'      => 2,
-                ])->save();
-            }
+            //]);
+            
+            // if (!$menuItem->exists) {
+            //     $menuItem->fill([
+            //         'target'     => '_self',
+            //         'icon_class' => null,
+            //         'color'      => null,
+            //         'parent_id'  => null,
+            //         'order'      => 2,
+            //     ])->save();
+            // }
 
             /*
             |--------------------------------------------------------------------------
@@ -356,7 +357,7 @@ class MenuItemsTableSeederCustom extends Seeder
 
             $menuItem = MenuItem::firstOrNew([
                 'menu_id' => $menu->id,
-                'title'   => 'Follow Me:',
+                'title'   => 'GET CODE FROM:',
                 'url'     => '',
                 'route'   => null,
             ]);
@@ -370,37 +371,37 @@ class MenuItemsTableSeederCustom extends Seeder
                 ])->save();
             }
 
-            $menuItem = MenuItem::firstOrNew([
-                'menu_id' => $menu->id,
-                'title'   => 'fa-globe',
-                'url'     => 'http://andremadarang.com',
-                'route'   => null,
-            ]);
-            if (!$menuItem->exists) {
-                $menuItem->fill([
-                    'target'     => '_self',
-                    'icon_class' => null,
-                    'color'      => null,
-                    'parent_id'  => null,
-                    'order'      => 2,
-                ])->save();
-            }
+            // $menuItem = MenuItem::firstOrNew([
+            //     'menu_id' => $menu->id,
+            //     'title'   => 'fa-globe',
+            //     'url'     => 'http://andremadarang.com',
+            //     'route'   => null,
+            // ]);
+            // if (!$menuItem->exists) {
+            //     $menuItem->fill([
+            //         'target'     => '_self',
+            //         'icon_class' => null,
+            //         'color'      => null,
+            //         'parent_id'  => null,
+            //         'order'      => 2,
+            //     ])->save();
+            // }
 
-            $menuItem = MenuItem::firstOrNew([
-                'menu_id' => $menu->id,
-                'title'   => 'fa-youtube',
-                'url'     => 'http://youtube.com/drehimself',
-                'route'   => null,
-            ]);
-            if (!$menuItem->exists) {
-                $menuItem->fill([
-                    'target'     => '_self',
-                    'icon_class' => null,
-                    'color'      => null,
-                    'parent_id'  => null,
-                    'order'      => 2,
-                ])->save();
-            }
+            // $menuItem = MenuItem::firstOrNew([
+            //     'menu_id' => $menu->id,
+            //     'title'   => 'fa-youtube',
+            //     'url'     => 'http://youtube.com/drehimself',
+            //     'route'   => null,
+            // ]);
+            // if (!$menuItem->exists) {
+            //     $menuItem->fill([
+            //         'target'     => '_self',
+            //         'icon_class' => null,
+            //         'color'      => null,
+            //         'parent_id'  => null,
+            //         'order'      => 2,
+            //     ])->save();
+            // }
 
             $menuItem = MenuItem::firstOrNew([
                 'menu_id' => $menu->id,
@@ -418,21 +419,21 @@ class MenuItemsTableSeederCustom extends Seeder
                 ])->save();
             }
 
-            $menuItem = MenuItem::firstOrNew([
-                'menu_id' => $menu->id,
-                'title'   => 'fa-twitter',
-                'url'     => 'http://twitter.com/drehimself',
-                'route'   => null,
-            ]);
-            if (!$menuItem->exists) {
-                $menuItem->fill([
-                    'target'     => '_self',
-                    'icon_class' => null,
-                    'color'      => null,
-                    'parent_id'  => null,
-                    'order'      => 2,
-                ])->save();
-            }
+            // $menuItem = MenuItem::firstOrNew([
+            //     'menu_id' => $menu->id,
+            //     'title'   => 'fa-twitter',
+            //     'url'     => 'http://twitter.com/drehimself',
+            //     'route'   => null,
+            // ]);
+            // if (!$menuItem->exists) {
+            //     $menuItem->fill([
+            //         'target'     => '_self',
+            //         'icon_class' => null,
+            //         'color'      => null,
+            //         'parent_id'  => null,
+            //         'order'      => 2,
+            //     ])->save();
+            // }
         }
     }
 }

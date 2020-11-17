@@ -38,16 +38,16 @@
                 </div> <!-- end top-nav -->
                 <div class="hero container">
                     <div class="hero-copy">
-                        <h1 style="font-size:40px;cursor:pointer; color:white; font-family: 'Shadows Into Light', cursive;" >BUILD YOUR OWN "CUSTOM PC" RIGHT HERE!</h1>
+                        <h1 style="font-size:55px;cursor:pointer; color:white; font-family: 'Shadows Into Light', cursive;" >BUILD YOUR OWN "CUSTOM PC" RIGHT HERE!</h1>
                         <!-- <p>YAHAN COMPUTER KA SAMAN MILEGA!</p> -->
                         <div class="hero-buttons">
-                            <a href="" class="button button-white">BUILD HERE</a>
+                            <a href="/pay" class="button button-white">BUILD HERE</a>
                             <a href="{{ route('shop.index') }}" class="button button-white">OTHER PRODUCTS</a>
                         </div>
                     </div> <!-- end hero-copy -->
 
                     <div class="hero-image">
-                        <img src="img/imac.png" alt="hero image">
+                        <img src="img/custom.png" alt="hero image">
                     </div> <!-- end hero-image -->
                 </div> <!-- end hero -->
             </header>
