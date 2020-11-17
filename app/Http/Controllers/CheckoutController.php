@@ -80,7 +80,7 @@ class CheckoutController extends Controller
                 'metadata' => [
                     'contents' => $contents,
                     'quantity' => Cart::instance('default')->count(),
-                    'discount' => collect(session()->get('coupon'))->toJson(),
+                    // 'discount' => collect(session()->get('coupon'))->toJson(),
                 ],
             ]);
 
